@@ -9,31 +9,98 @@
 	</head>
 <body>
 	<div class="jumbotron">
-		<h1 id="transbox">Jebba Needlepoint</h1>
-			<p id="transbox">Find us in Orange County</p>
-			<p id="transbox">We offer decades of experience and relevant designs for all your needlepoint projects</p>
+		<h1 id="transbox">JEBBA NEEDLEPOINT</h1>
 	</div>
-
 	<div class = "container1">
 		<h3>Personal Customer Service</h3>
-			<p>
-				<p>Free consultation with every purchase</p>
-				<p>Open 6 days a week to accommodate your schedule</p>
-				<p>Group classes</p>
-			</p>
+			<p>Decades of experience</p>
+			<p>Free consultation with every purchase</p>
+			<p>We offer group classes</p>
 	</div>
-	<div class = "container2">
-		<h3>Extensive Variety of Product</h3>
-			<p>
+	<div class = "container1">
+		<h3>Designers We Work With</h3>
 				<p>Thousands of canvases and fibers in stock</p>
-				<p>We offer personalized canvas design for that extra special project</p>
-			</p>
+				<p>Check out a few of our designers and their work</p>
+			<div class="container.fluid row"> <!---insert linked images here-->
+				<div class="col-md-3">
+					<p>Designer Name</p>
+				</div>
+				<div class="col-md-3">
+					<p>Designer Name</p>
+				</div>
+				<div class="col-md-3">
+					<p>Designer Name</p>
+				</div>
+				<div class="col-md-3">
+					<p>Designer Name</p>
+				</div>
+			</div>
 	</div>
-	<div class = "container">
-		<h3>Contact Us!</h3>
+	<div class ="container1">
+		<h4 id="header">Store Hours</h4>
+			<p>Tuesday 9AM - 6PM</p>
+			<p>Wednesday 9AM - 6PM</p>
+			<p>Thursday 9AM - 6PM</p>
+			<p>Friday 9AM - 6PM</p>
+			<p>Saturday 9AM - 6PM</p>
+	</div>
+	<div class = "container1">
+		<h3>Find Us</h3>
 			<p>We are located at <a href="https://www.google.com/maps/place/Jebba+Needlepoint/@33.602608,-117.8730154,15z/data=!4m2!3m1!1s0x0:0x4767fd96a334d3e1">2628 East Coast Highway, Corona Del Mar, CA 92625.</a></p>
 			<p>Phone:(949)644-7904</p>
+			<p>Email <a href="limichelle21@gmail.com">Jebba</a></p>
 	</div>
+
+	<!---<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+		<div class="row">
+			<label for="name">Your Name:</label><br/>
+			<input id="name" class="input" name="name" type-"text" value="" size="30"/></br>
+		</div>
+		<div class="row">
+			<label for="email">Your Email:</label><br/>
+			<input id="email" class="input" name="email" type="text" value="" size="30"/></br>
+		</div>
+		<div class="row">
+			<label for="message">Your message:</label></br/>
+			<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br/>
+		</div>
+		<input id="submit_button" type="submit" value="Send email"/>
+	</form>-->
+
+	<!--<?php
+$action=$_REQUEST['action'];
+if ($action=="")    /* display the contact form */
+    {
+    ?>
+    <form  action="" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="action" value="submit">
+    Your name:<br>
+    <input name="name" type="text" value="" size="30"/><br>
+    Your email:<br>
+    <input name="email" type="text" value="" size="30"/><br>
+    Your message:<br>
+    <textarea name="message" rows="7" cols="30"></textarea><br>
+    <input type="submit" value="Send email"/>
+    </form>
+    <?php
+    } 
+else                /* send the submitted data */
+    {
+    $name=$_REQUEST['name'];
+    $email=$_REQUEST['email'];
+    $message=$_REQUEST['message'];
+    if (($name=="")||($email=="")||($message==""))
+        {
+        echo "All fields are required, please fill <a href=\"\">the form</a> again.";
+        }
+    else{        
+        $from="From: $name<$email>\r\nReturn-path: $email";
+        $subject="Message sent using your contact form";
+        mail("limichelle21@gmail.com", $subject, $message, $from);
+        echo "Email sent!";
+        }
+    }  
+?>-->
 	
 
 
