@@ -3,13 +3,17 @@ body {
 }
 
 
-#header {
+.store_hour {
 	font-family: montserrat, sans-serif;
 	font-weight: bold;
 	color: #000000;
 	text-align: center;
-	padding-top: 50px;
+	padding: 25px 25px 25px 25px;
+	border: 1px solid black;
+	border-radius: 10px;
+
 }
+
 
 .jumbotron {
 	background-image: url(IMG_0006.jpg);
