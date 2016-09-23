@@ -46,7 +46,8 @@ body > header {
 }
 
 .header .col-md-6 {
-	margin-top: 10em;
+	margin-top: 10rem;
+	margin-left: 6rem;
 }
 
 header h1 {
