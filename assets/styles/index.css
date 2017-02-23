@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+
+*:before {
+  box-sizing: border-box;
+}
+
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%
+}
+body {
+	font-size: 1.5em;
+	line-height: 1.6;
+	font-weight: 400;
+	font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #222;
+}
+
+
+.header-content {
+    position: relative;
+    min-height: 600px;
+    background-color: lightgoldenrodyellow;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+.header-content .header-title {
+    position: absolute;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-shadow: 1px 1px 0px rgb(58,23,63);
+}
+
+.header-content .graphic {
+    background-image: url(/assets/images/IMG_0006crop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 200px;
+}
+
+/* Navigation */
+
+.navbar {
+	text-align: right;
+	margin-top: 2em;
+	letter-spacing: .2rem;
+}
+
+.logo {
+    
+}
+
+.navbar .links-container {
+    display: table;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
+    color: black;
+    text-decoration: none;
+}
+
+.links-container .navbar-link {
+    display: table-cell;
+    position: relative;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    vertical-align: middle;
+    color: black;
+    font-size: 1.625rem;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.links-container .navbar-link:hover {
+    color: rgb(233,50,117);
+}
+
+
+.selling-points {
+    position: relative;
+    min-height: 400px;
+}
+
+
+.point {
+    position: relative;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.point .point-title {
+    font-size: 2.25rem;
+}
+
+.ion-edit, .ion-scissors, .ion-thumbsup {
+    color: black;
+    font-size: 10rem;
+}
+
+/* Store Hours */
+
+.store-info {
+   background-color: lightgoldenrodyellow;
+   min-height: 200px;
+}
+
+
+$min-width: 320px;
+$number-of-days: 7;
+$column-width: percentage(1/$number-of-days);
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1em;
+}
+
+.row:before {
+  display: table;
+  content: " ";
+}
+
+.grid-calendar {
+    padding-top: 5rem;
+}
+
+
+.grid-cell {
+    display: inline-block;
+    float: left;
+    min-height: 1px;
+    padding: 0;
+    position: relative;
+    width: $column-width;
+    background-color: #efefef;
+    border: 1px solid #fff;
+    text-align: center;
+    }
+    
+.grid-cell .day {
+    font-weight: bold;
+}
+
+@media (min-width: 768px){
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1  {
+    width: 100%;
+    *width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+  }
+}
+
+/* Contact */
+
+.contact {
+    min-height: 400px;
+}
+
+.glyphicon {
+	color: black;
+    font-size: 10rem;
+}
+
+.iframe {
+    text-align: center;
+    display: block;
+}
+
+iframe {
+    margin: 0 auto;
+}
+
+
+/* Contact Form */
+
+
+
+
+/* Footer */
+
+.nav-footer {
+    display: table;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    color: black;
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 10rem;
+}
